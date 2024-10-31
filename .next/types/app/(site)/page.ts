@@ -1,4 +1,4 @@
-// File: C:\Users\sneha\OneDrive\Desktop\Sangeet\Music-App-Sangeet\sangeet\app\(site)\page.tsx
+// File: C:\Users\sneha\OneDrive\Desktop\DSA Project\app\(site)\page.tsx
 import * as entry from '../../../../app/(site)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,4 +1,4 @@
-// File: C:\Users\sneha\OneDrive\Desktop\Sangeet\Music-App-Sangeet\sangeet\app\layout.tsx
+// File: C:\Users\sneha\OneDrive\Desktop\DSA Project\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
