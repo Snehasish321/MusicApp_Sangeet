@@ -519,14 +519,32 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
+.left-\[50\%\] {
+  left: 50%;
+}
 .right-5 {
   right: 1.25rem;
+}
+.right-\[10px\] {
+  right: 10px;
+}
+.top-\[10px\] {
+  top: 10px;
+}
+.top-\[50\%\] {
+  top: 50%;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -555,6 +573,9 @@ video {
 .hidden {
   display: none;
 }
+.h-\[25px\] {
+  height: 25px;
+}
 .h-auto {
   height: auto;
 }
@@ -564,8 +585,14 @@ video {
 .h-full {
   height: 100%;
 }
+.max-h-full {
+  max-height: 100%;
+}
 .min-h-\[64px\] {
   min-height: 64px;
+}
+.w-\[25px\] {
+  width: 25px;
 }
 .w-\[300px\] {
   width: 300px;
@@ -579,8 +606,19 @@ video {
 .flex-1 {
   flex: 1 1 0%;
 }
+.translate-x-\[-50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-\[-50\%\] {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .cursor-pointer {
   cursor: pointer;
+}
+.appearance-none {
+  appearance: none;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -641,6 +679,10 @@ video {
 .border {
   border-width: 1px;
 }
+.border-neutral-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(64 64 64 / var(--tw-border-opacity));
+}
 .border-transparent {
   border-color: transparent;
 }
@@ -659,9 +701,16 @@ video {
 .bg-neutral-100\/10 {
   background-color: rgb(245 245 245 / 0.1);
 }
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
 .bg-neutral-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+.bg-neutral-900\/90 {
+  background-color: rgb(23 23 23 / 0.9);
 }
 .bg-slate-200 {
   --tw-bg-opacity: 1;
@@ -697,6 +746,9 @@ video {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-\[25px\] {
+  padding: 25px;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -736,6 +788,9 @@ video {
 .pt-4 {
   padding-top: 1rem;
 }
+.text-center {
+  text-align: center;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -743,6 +798,10 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -765,6 +824,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
 }
+.text-neutral-50 {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -775,6 +838,11 @@ video {
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -815,6 +883,12 @@ body,
 }
 
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+
 .disabled\:cursor-not-allowed:disabled {
   cursor: not-allowed;
 }
@@ -846,6 +920,22 @@ body,
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:max-h-\[85vh\] {
+    max-height: 85vh;
+  }
+
+  .md\:w-\[90vw\] {
+    width: 90vw;
+  }
+
+  .md\:max-w-\[450px\] {
+    max-width: 450px;
   }
 }
 
