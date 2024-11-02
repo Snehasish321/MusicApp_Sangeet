@@ -701,6 +701,10 @@ video {
 .bg-neutral-100\/10 {
   background-color: rgb(245 245 245 / 0.1);
 }
+.bg-neutral-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+}
 .bg-neutral-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
@@ -782,6 +786,9 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
 .pr-4 {
   padding-right: 1rem;
 }
@@ -798,6 +805,10 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -857,6 +868,33 @@ body,
   height: 100%;
   background-color: black;
   color-scheme: dark;
+}
+
+
+.file\:border-0::file-selector-button {
+  border-width: 0px;
+}
+
+
+.file\:bg-transparent::file-selector-button {
+  background-color: transparent;
+}
+
+
+.file\:text-sm::file-selector-button {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+
+.file\:font-medium::file-selector-button {
+  font-weight: 500;
+}
+
+
+.placeholder\:text-neutral-400::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
 
