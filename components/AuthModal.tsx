@@ -36,7 +36,6 @@ const AuthModal = () => {
     isOpen={isOpen}
     onChange={onChange}
     >
-      Auth modal Children!
       <Auth 
       theme="dark"
       magicLink
